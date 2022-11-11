@@ -24,7 +24,7 @@ const MyReviews = () =>
 
     const handleDelete = id =>
     {
-        const proceed = window.confirm('Are you sure, you want to cancel this order');
+        const proceed = window.confirm('Are you sure, you want to cancel this review');
         if (proceed) {
             fetch(`http://localhost:4000/reviews/${id}`, {
                 method: 'DELETE',
