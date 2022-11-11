@@ -39,8 +39,8 @@ const CustomerEating = () =>
                     Home Made Food Delivered Scene
                 </h2>
                 <p className="text-base text-gray-700 md:text-lg">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque rem aperiam, eaque ipsa quae.
+                Online food ordering is the process of ordering food, for 
+                delivery or pickup, from a website or other application.
                 </p>
             </div>
             <div className="grid max-w-screen-lg gap-8 row-gap-5 mb-8 sm:grid-cols-2 lg:grid-cols-4 sm:mx-auto">

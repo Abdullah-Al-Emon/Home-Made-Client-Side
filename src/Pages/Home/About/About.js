@@ -36,10 +36,12 @@ const About = () =>
                         </span>
                     </h5>
                     <p className="mb-6 text-gray-900">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-                        quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem totam rem aperiam, eaque ipsa quae explicabo.
+                        Homemade food is usually prepared with natural ingredients compared
+                        to commercially prepared food. you have more control over the 
+                        ingredients. By cooking for yourself, you can ensure that you 
+                        and your family eat fresh, wholesome meals. This can help you to look 
+                        and feel healthier, boost your energy, stabilize your weight and mood, 
+                        and improve your sleep and resilience to stress.
                     </p>
                     <hr className="mb-5 border-gray-300" />
                     <div className="flex items-center space-x-4">

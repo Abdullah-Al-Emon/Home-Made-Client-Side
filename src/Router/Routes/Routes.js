@@ -30,7 +30,7 @@ export const router = createBrowserRouter([
                 element: <SignUp/>
             },
             {
-                path: '/services',
+                path: '/service',
                 element: <Services/>,
             },
             {
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
                 loader: ({params}) => fetch(`http://localhost:4000/services/${params.id}`)
             },
             {
-                path: '/service',
+                path: '/services',
                 element: <AllServices/>
             }
         ]

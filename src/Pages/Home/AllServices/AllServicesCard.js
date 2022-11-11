@@ -1,12 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import 'react-photo-view/dist/react-photo-view.css';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 
-const AllServicesCard = ({allService}) => {
+const AllServicesCard = ({ allService }) =>
+{
     // console.log(allService)
     const { title, price, ratting, img, description, _id } = allService;
     return (
         <div className="card w-[300px] md:w-[350px] mx-auto h-[550px] bg-base-100 shadow-xl">
-            <figure><img src={img} className='h-64 w-full' alt="Shoes" /></figure>
+            <figure>
+                <PhotoProvider>
+                    <PhotoView src={img}>
+                        <img src={img} alt="" />
+                    </PhotoView>
+                </PhotoProvider>
+            </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{description.slice(0, 100) + '...'}

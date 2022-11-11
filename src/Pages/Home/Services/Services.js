@@ -42,7 +42,7 @@ const Services = () =>
                     ></ServicesCard>)
                 }
             </div>
-            <div className='text-center mb-5'><Link to='/service' className="btn bg-gray-600 normal-case text-base hover:bg-gray-900">See all Services</Link></div>
+            <div className='text-center mb-5'><Link to='/services' className="btn bg-gray-600 normal-case text-base hover:bg-gray-900">See all Services</Link></div>
         </div>
     );
 };

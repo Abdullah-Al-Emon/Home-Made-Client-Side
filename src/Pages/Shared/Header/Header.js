@@ -35,7 +35,7 @@ const Header = () =>
                                     </>
                                     :
                                     <>
-                                        <li><Link to='signUp' className='hover:link'>Sign Up</Link></li>
+                                        <li><Link to='/signUp' className='hover:link'>Sign Up</Link></li>
                                         <li><Link to='/signIn' className="btn text-white ml-2 bg-gray-600 hover:bg-gray-900">Sign In</Link></li>
                                     </>
                             }
@@ -59,7 +59,7 @@ const Header = () =>
                                 </>
                                 :
                                 <>
-                                    <li><Link to='signUp' className='hover:link'>Sign Up</Link></li>
+                                    <li><Link to='/signUp' className='hover:link'>Sign Up</Link></li>
                                     <li><Link to='/signIn' className="btn text-white ml-2 bg-gray-600 hover:bg-gray-900">Sign In</Link></li>
                                 </>
                         }
