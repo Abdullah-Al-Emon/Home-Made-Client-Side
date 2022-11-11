@@ -14,20 +14,22 @@ const SignUp = () =>
         const email = form.email.value;
         const password = form.password.value;
         const photoURL = form.photoURL.value;
+        const name = form.fullName.value;
 
         createUser(email, password)
         .then(result => {
             const user = result.user;
-            handleUpdateUserProfile(photoURL)
+            handleUpdateUserProfile(photoURL, name)
             form.reset()
             console.log(user)
         })
         .catch(err => console.error(err))
     }
 
-    const handleUpdateUserProfile = ( photoURL) =>
+    const handleUpdateUserProfile = ( photoURL, name) =>
     {
         const profile = {
+            displayName: name,
             photoURL: photoURL
         }
         updateUserProfile(profile)
@@ -74,8 +76,26 @@ const SignUp = () =>
                                 <form onSubmit={handleSignUp}>
                                     <div className="mb-1 sm:mb-2">
                                         <label
+                                            htmlFor="fullName"
+                                            className="inline-block mb-1 font-medium"
+                                            required
+                                        >
+                                            Full Name
+                                        </label>
+                                        <input
+                                            placeholder="Enter Your PhotoURL"
+                                            required
+                                            type="text"
+                                            className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                                            id="fullName"
+                                            name="fullName"
+                                        />
+                                    </div>
+                                    <div className="mb-1 sm:mb-2">
+                                        <label
                                             htmlFor="photoURL"
                                             className="inline-block mb-1 font-medium"
+                                            required
                                         >
                                             PhotoURL
                                         </label>
@@ -92,6 +112,7 @@ const SignUp = () =>
                                         <label
                                             htmlFor="email"
                                             className="inline-block mb-1 font-medium"
+                                            required
                                         >
                                             E-mail
                                         </label>

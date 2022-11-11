@@ -30,7 +30,7 @@ const Header = () =>
                             {
                                 user?.uid ?
                                     <>
-                                        <li><Link to='blog' className='hover:link'>My Reviews</Link></li>
+                                        <li><Link to='/myReviews' className='hover:link'>My Reviews</Link></li>
                                         <li><Link to='blog' className='hover:link'>Add Service</Link></li>
                                         <li><Link onClick={handleLogOut} className="btn text-white ml-2 bg-gray-600 hover:bg-gray-900">Sign Out</Link></li>
                                     </>
@@ -55,7 +55,7 @@ const Header = () =>
                         {
                             user?.uid ?
                                 <>
-                                    <li><Link to='blog' className='hover:link'>My Reviews</Link></li>
+                                    <li><Link to='/myReviews' className='hover:link'>My Reviews</Link></li>
                                     <li><Link to='blog' className='hover:link'>Add Service</Link></li>
                                     <li><Link onClick={handleLogOut} className="btn text-white ml-2 bg-gray-600 hover:bg-gray-900">Sign Out</Link></li>
                                 </>
