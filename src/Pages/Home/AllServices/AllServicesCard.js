@@ -5,7 +5,6 @@ import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 const AllServicesCard = ({ allService }) =>
 {
-    // console.log(allService)
     const { title, price, ratting, img, description, _id } = allService;
     return (
         <div className="card w-[300px] md:w-[350px] mx-auto h-[550px] bg-base-100 shadow-xl">
