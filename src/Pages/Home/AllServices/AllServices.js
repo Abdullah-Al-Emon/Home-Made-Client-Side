@@ -6,6 +6,7 @@ const AllServices = () =>
 {
     useTitle('Services')
     const [allServices, setAllServices] = useState([])
+    
     useEffect(() =>
     {
         fetch(`http://localhost:4000/services`)
