@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Rice Chicken Curry",
+    "price": "5.00",
+    "ratting": "5",
+    "img": "https://i.ibb.co/g4SJj97/service-1.jpg",
+    "description" : "A typical curry from the Indian subcontinent consists of chicken stewed in an onion- and tomato-based sauce, flavoured with ginger, garlic, tomato puree, chilli peppers and a variety of spices, often including turmeric, cumin, coriander, cinnamon, and cardamom."
+  },
+  {
+    "title": "Rice Beef Curry",
+    "price": "8.00",
+    "ratting": "6",
+    "img": "https://i.ibb.co/sCJyX2C/service-2.webp",
+    "description" : "Made with beef, potatoes, carrots, mushrooms, and curry roux, this savory and hearty Japanese Beef Curry makes for a fabulous introduction to new curry eaters. Adapted to Japanese tastes, it's mild and sweet with a stew-like consistency. Even children enjoy it thoroughly! You have to give this easy recipe a try."
+  },
+  {
+    "title": "Mutton Biryani",
+    "price": "7.00",
+    "ratting": "4",
+    "img": "https://i.ibb.co/WKhSJ4R/service-3.gif",
+    "description": "Biryani (/bɜ:r'jg:ni/) is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with Indian spices, rice, and usually some type of meat (chicken, beef, goat, lamb, prawn, fish) or in some cases without any meat, and sometimes, in addition, eggs and potatoes."
+  },
+  {
+    "title": "Rice Goat meat curry",
+    "price": "9.00",
+    "ratting": "5",
+    "img": "https://i.ibb.co/y4zyT3P/service-5.jpg",
+    "description": "Goat basically tastes like lamb, but is far leaner. (Lamb is the fattiest of the red meats.) It's very popular in a variety of different countries' cuisines, but for some reason has yet to gain a real following in the US."
+  },
+  {
+    "title": "French Fries",
+    "price": "4.00",
+    "ratting": "7",
+    "img": "https://i.ibb.co/FW6xLtW/service-4jpg.jpg",
+    "description": "french fries, also called chips, finger chips, fries, or French pommes frites, side dish or snack typically made from deep-fried potatoes that have been cut into various shapes, especially thin strips. Fries are often salted and served with other items, including ketchup, mayonnaise, or vinegar."
+  },
+  {
+    "title": "Homemade Pizza",
+    "price": "5.00",
+    "ratting": "5",
+    "img": "https://i.ibb.co/n8y2stg/service-6.jpg",
+    "description": "The secret of the Handmade Pan pizza is the delectable crust, made from fresh, never frozen, dough. Domino's trains every pizza maker to create the just—right thickness so every bite is rich and flavorful. The Handmade Pan is enhanced by your pick of cheeses, sauce, and toppings."
+  }
+]
