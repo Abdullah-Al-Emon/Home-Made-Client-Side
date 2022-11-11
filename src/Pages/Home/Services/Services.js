@@ -9,7 +9,7 @@ const Services = () =>
 
     useEffect(() =>
     {
-        fetch(`http://localhost:4000/services?size=${size}`)
+        fetch(`https://home-made-server.vercel.app/services?size=${size}`)
             .then(res => res.json())
             .then(data => {setServices(data)
                 setSize(3)

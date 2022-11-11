@@ -19,7 +19,7 @@ const AddServices = () =>
            description
         }
 
-        fetch(`http://localhost:4000/services`, {
+        fetch(`https://home-made-server.vercel.app/services`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

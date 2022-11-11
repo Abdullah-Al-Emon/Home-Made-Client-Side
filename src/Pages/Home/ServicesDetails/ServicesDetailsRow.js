@@ -7,7 +7,7 @@ const ServicesDetailsRow = () =>
 
     useEffect(() =>
     {
-        fetch(`http://localhost:4000/reviews`)
+        fetch(`https://home-made-server.vercel.app/reviews`)
             .then(res => res.json())
             .then(data => setReviews(data))
     }, [])
@@ -16,7 +16,7 @@ const ServicesDetailsRow = () =>
     {
         const proceed = window.confirm('Are you sure, you want to cancel this review');
         if (proceed) {
-            fetch(`http://localhost:4000/reviews/${id}`, {
+            fetch(`https://home-made-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

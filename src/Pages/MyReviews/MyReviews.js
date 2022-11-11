@@ -9,7 +9,7 @@ const MyReviews = () =>
 
     useEffect(() =>
     {
-        fetch(`http://localhost:4000/reviews?email=${user?.email}`)
+        fetch(`https://home-made-server.vercel.app/reviews?email=${user?.email}`)
             .then(res =>
             {
                 if (res.status === 401 || res.status === 403) {
@@ -26,7 +26,7 @@ const MyReviews = () =>
     {
         const proceed = window.confirm('Are you sure, you want to cancel this review');
         if (proceed) {
-            fetch(`http://localhost:4000/reviews/${id}`, {
+            fetch(`https://home-made-server.vercel.app/reviews/${id}`, {
                 method: 'DELETE',
             })
                 .then(res => res.json())

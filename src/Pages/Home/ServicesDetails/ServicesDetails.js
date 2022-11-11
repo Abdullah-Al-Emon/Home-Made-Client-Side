@@ -32,7 +32,7 @@ const ServicesDetails = () =>
             ratting
         }
 
-        fetch(`http://localhost:4000/reviews`, {
+        fetch(`https://home-made-server.vercel.app/reviews`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
