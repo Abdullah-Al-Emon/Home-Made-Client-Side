@@ -1,7 +1,8 @@
-import React, { useContext } from 'react';
+import React, { useContext,  } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
 import PrivateRoute from '../../../Router/PrivateRoute/PrivateRoute';
+import ServicesDetailsRow from './ServicesDetailsRow';
 
 const ServicesDetails = () =>
 {
@@ -85,42 +86,7 @@ const ServicesDetails = () =>
                 <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
                     <div className="flex flex-col items-center justify-between xl:flex-row">
                         <div className="w-full  mb-12 xl:pr-16 xl:mb-0 xl:w-7/12">
-                            <div className="overflow-x-auto shadow-md rounded-lg mx-auto my-3 w-full">
-                                <table className="table w-full">
-
-                                    <tbody>
-                                        <tr>
-                                            <th>
-                                                <label>
-                                                    <input type="checkbox" className="checkbox" />
-                                                </label>
-                                            </th>
-                                            <td>
-                                                <div className="flex items-center space-x-3">
-                                                    <div className="avatar">
-                                                        <div className="mask mask-squircle w-8 h-12">
-                                                            <img src="/tailwind-css-component-profile-2@56w.png" alt="Avatar Tailwind CSS Component" />
-                                                        </div>
-                                                    </div>
-                                                    <div>
-                                                        <div className="font-bold">Hart Hagerty</div>
-                                                        <div className="text-sm opacity-50">United States</div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                Zemlak, Daniel and Leannon
-                                                <br />
-                                                <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
-                                            </td>
-                                            <td>Purple</td>
-                                            <th>
-                                                <button className="btn btn-ghost btn-xs">details</button>
-                                            </th>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <ServicesDetailsRow></ServicesDetailsRow>
                         </div>
                         <div className="w-full max-w-xl xl:px-8 xl:w-5/12">
                             <div className="relative">
