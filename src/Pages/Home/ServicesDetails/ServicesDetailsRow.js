@@ -12,7 +12,25 @@ const ServicesDetailsRow = () =>
             .then(data => setReviews(data))
     }, [])
     console.log(reviews)
-    
+    const handleDelete = id =>
+    {
+        const proceed = window.confirm('Are you sure, you want to cancel this order');
+        if (proceed) {
+            fetch(`http://localhost:4000/reviews/${id}`, {
+                method: 'DELETE',
+            })
+                .then(res => res.json())
+                .then(data =>
+                {
+                    console.log(data)
+                    if (data.deletedCount > 0) {
+                        alert('deleted successfully')
+                        const remaining = reviews.filter(odr => odr._id !== id);
+                        setReviews(remaining)
+                    }
+                })
+        }
+    }
     // console.log(reviews)
     return (
         <div className="overflow-x-auto shadow-md rounded-lg mx-auto my-3 w-full">
@@ -22,6 +40,7 @@ const ServicesDetailsRow = () =>
                         reviews.map(review => <ServicesReviewRow
                             key={review._id}
                             review={review}
+                            handleDelete={handleDelete}
                         ></ServicesReviewRow>)
                     }
                 </tbody>

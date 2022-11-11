@@ -1,15 +1,16 @@
 import React from 'react';
+import { AiFillDelete } from 'react-icons/ai';
 
-const MyReviewsRow = ({review}) =>
+const MyReviewsRow = ({review, handleDelete}) =>
 {
     // console.log(review)
     const {customer, customer_photo, price, serviceName, service, _id, ratting} = review;
     return (
         <tr>
             <th>
-                <label>
-                    <input type="checkbox" className="checkbox" />
-                </label>
+                <button onClick={() => handleDelete(_id)} className='text-xl text-white p-3 rounded-full hover:bg-gray-800 bg-gray-500'>
+                   <AiFillDelete></AiFillDelete>
+                </button>
             </th>
             <td>
                 <div className="flex items-center space-x-3">
