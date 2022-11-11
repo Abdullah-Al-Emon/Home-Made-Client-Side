@@ -43,7 +43,7 @@ const Header = () =>
                     </ul>
                 </div>
                 <img src={logo} className='w-24 h-16' alt="" />
-                <Link className=" ml-3 normal-case text-2xl font-bold">HOME MADE</Link>
+                <Link to='/' className=" ml-3 normal-case text-2xl font-bold">HOME MADE</Link>
             </div>
             <div className="navbar-end hidden md:flex">
                 <ul className="font-semibold menu menu-horizontal p-0">

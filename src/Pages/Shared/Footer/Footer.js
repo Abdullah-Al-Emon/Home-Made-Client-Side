@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../../assets/Images/home-made-logo.png'
 
 const Footer = () => {
@@ -13,9 +14,9 @@ const Footer = () => {
                 className="inline-flex items-center"
               >
                 <img src={logo} className='w-24 h-16' alt="" />
-                <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                <Link to='/' className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                   Home Made
-                </span>
+                </Link>
               </a>
               <div className="mt-6 lg:max-w-sm">
                 <p className="text-sm text-gray-800">
