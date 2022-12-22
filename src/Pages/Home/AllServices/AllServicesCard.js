@@ -7,7 +7,7 @@ const AllServicesCard = ({ allService }) =>
 {
     const { title, price, ratting, img, description, _id } = allService;
     return (
-        <div className="card w-[300px] md:w-[350px] mx-auto h-[550px] bg-base-100 shadow-xl">
+        <div data-aos="zoom-in-up" className="card w-[300px] md:w-[350px] mx-auto h-[550px] bg-base-100 shadow-xl">
             <figure>
                 <PhotoProvider>
                     <PhotoView src={img}>

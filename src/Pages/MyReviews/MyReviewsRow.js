@@ -4,12 +4,12 @@ import { AiFillDelete } from 'react-icons/ai';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const MyReviewsRow = ({ review, handleDelete }) =>
+const MyReviewsRow = ({ revw, handleDelete }) =>
 {
     const notify = () => toast("Wow so easy!");
 
     // console.log(review)
-    const { customer, customer_photo, price, serviceName, service, _id, ratting } = review;
+    const { customer, customer_photo, price, serviceName, review, _id, ratting } = revw;
     return (
         <tr>
             <th>
@@ -29,7 +29,7 @@ const MyReviewsRow = ({ review, handleDelete }) =>
                     </div>
                     <div>
                         <div className="font-bold">{customer}</div>
-                        {/* <div className="text-sm opacity-50">United States</div> */}
+                        <div className="text-sm opacity-50">{review}</div>
                     </div>
                 </div>
             </td>
@@ -40,7 +40,7 @@ const MyReviewsRow = ({ review, handleDelete }) =>
             </td>
             <td>Ratting: {ratting}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <button className="btn btn-ghost btn-xs">Edit Review</button>
             </th>
         </tr>
     );

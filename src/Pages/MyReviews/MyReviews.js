@@ -46,9 +46,9 @@ const MyReviews = () =>
             <table className="table w-full">
                 <tbody>
                     {
-                        reviews.map(review => <MyReviewsRow
-                        key={review._id}
-                        review={review}
+                        reviews.map(revw => <MyReviewsRow
+                        key={revw._id}
+                        revw={revw}
                         handleDelete={handleDelete}
                         ></MyReviewsRow>)
                     }

@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider';
 import useTitle from '../../Hooks/useTitle';
@@ -22,6 +23,7 @@ const SignUp = () =>
             handleUpdateUserProfile(photoURL, name)
             form.reset()
             console.log(user)
+            toast.success("Create a New Account Complete")
         })
         .catch(err => console.error(err))
     }

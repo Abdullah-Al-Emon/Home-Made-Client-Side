@@ -37,9 +37,9 @@ const ServicesDetailsRow = () =>
             <table className="table w-full">
                 <tbody>
                     {
-                        reviews.map(review => <ServicesReviewRow
-                            key={review._id}
-                            review={review}
+                        reviews.map(revw => <ServicesReviewRow
+                            key={revw._id}
+                            revw={revw}
                             handleDelete={handleDelete}
                         ></ServicesReviewRow>)
                     }

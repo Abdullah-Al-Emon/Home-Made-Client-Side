@@ -1,4 +1,5 @@
 import React, { useContext,  } from 'react';
+import { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../Context/AuthProvider';
 import PrivateRoute from '../../../Router/PrivateRoute/PrivateRoute';
@@ -10,6 +11,7 @@ const ServicesDetails = () =>
 
     const { img, title, description, price, ratting, _id } = detailsServices;
     const { user } = useContext(AuthContext);
+    const [isChange, setIsChange] = useState(true)
 
     const handlePlaceReviews = event =>
     {
@@ -45,6 +47,7 @@ const ServicesDetails = () =>
                 console.log(data)
                 if (data.acknowledged) {
                     alert('Order placed successfully')
+                    setIsChange(!isChange)
                     form.reset();
                 }
             })

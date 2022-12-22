@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useTitle from '../../Hooks/useTitle';
 import { FaGoogle } from 'react-icons/fa';
 import { AuthContext } from '../../Context/AuthProvider';
+import { toast } from 'react-toastify';
 
 
 const SignIn = () =>
@@ -26,6 +27,7 @@ const SignIn = () =>
             form.reset()
             navigate(from, {replace: true})
             console.log(user)
+            toast.success("Log In Complete")
         })
         .catch(err => console.error(err))
     }
@@ -35,6 +37,7 @@ const SignIn = () =>
         .then(result => {
             const user = result.user;
             console.log(user)
+            toast.success("Google Sign In Complete")
         })
         .catch(err => console.error(err))
     }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { AiFillDelete } from 'react-icons/ai';
 
-const ServicesReviewRow = ({review, handleDelete}) =>
+const ServicesReviewRow = ({revw, handleDelete}) =>
 {
-    const {customer, customer_photo, price, serviceName, service, _id, ratting} = review;
+    const {customer, customer_photo, price, serviceName, review, _id, ratting} = revw;
     return (
         <tr>
             <th>
@@ -20,7 +20,7 @@ const ServicesReviewRow = ({review, handleDelete}) =>
                     </div>
                     <div>
                         <div className="font-bold">{customer}</div>
-                        {/* <div className="text-sm opacity-50">United States</div> */}
+                        <div className="text-sm opacity-50">{review}</div>
                     </div>
                 </div>
             </td>
@@ -31,7 +31,7 @@ const ServicesReviewRow = ({review, handleDelete}) =>
             </td>
             <td>Ratting: {ratting}</td>
             <th>
-                <button className="btn btn-ghost btn-xs">details</button>
+                <button className="btn btn-ghost btn-xs">Add Review</button>
             </th>
         </tr>
     );

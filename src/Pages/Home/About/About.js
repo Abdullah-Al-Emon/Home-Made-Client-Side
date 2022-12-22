@@ -5,7 +5,7 @@ const About = () =>
     return (
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="grid gap-10 lg:grid-cols-2">
-                <div className="lg:pr-10">
+                <div data-aos="zoom-in-left" className="lg:pr-10">
                     <a
                         href="/"
                         aria-label="Go Home"
@@ -80,7 +80,7 @@ const About = () =>
                         </a>
                     </div>
                 </div>
-                <div>
+                <div data-aos="zoom-in-right">
                     <img
                         className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
                         src="https://cdn7.dissolve.com/p/D2115_193_069/D2115_193_069_1200.jpg"
